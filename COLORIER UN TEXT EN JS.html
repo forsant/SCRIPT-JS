@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    let HT = Number(prompt("Prix HT:"));
+    let TVA = Number(prompt("porcentage de TVA:"));
+    let TAX =  (TVA * HT)/100 + HT ;
+
+//condition pour text en rouge ou vert une solution
+
+if(TAX>100){
+TAX = TAX.toString();// changer TAX en string(Alphanumerique)
+document.write(TAX.fontcolor("red"));//colorier les text avec fontcolor
+}
+else{
+   TAX = TAX.toString();
+   document.write(TAX.fontcolor("green"));
+}
+    </script>
+    
+</body>
+</html>
