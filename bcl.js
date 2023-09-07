@@ -13,4 +13,5 @@ while(resultat < 1000){
     resultat = n*compteur;
     compteur = compteur +1;
     document.write(resultat + "</br>")
+    
 }
