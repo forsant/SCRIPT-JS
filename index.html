@@ -5,14 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>   
+<body>
+    
 <script>
-let k=1;
-let n = prompt("veuillez entrer un nombre :  ");
-for( i=1;i<=n ;i++){
-    k=k*i;
+let note=0;
+let notes=0;
+let i=0;
+let devoirs = new Array();
+let a = Number(prompt("Nombre de notes : "));
+while(i < a){
+    i++;
+    note = Number(prompt("Veuillez inscrire la note N° : "+i));
+    devoirs[i]=[note];
+    notes=Number(notes+note);
 }
-document.write("La factoriel est : " + k );
+document.write("La moyenne est : " +Number(notes)/a+" sur les notes suivantes : "+"<br>");
+i=0;
+while(i < a){
+    i++;
+document.write(devoirs[i] + "  ");
+}
+console.log(devoirs);
+
 </script>
 </body>
 </html>
